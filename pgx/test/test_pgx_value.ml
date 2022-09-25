@@ -169,7 +169,7 @@ let () =
           ; null
           ; of_point (-5., 100.)
           ; unit
-          ; of_uuid (Uuidm.create `V4)
+          ; of_uuid (Uuidm.v `V4)
           ; of_string all_chars
           ]
         ]
@@ -197,7 +197,7 @@ let () =
         of_uuid
         to_uuid
         to_uuid_exn
-        [ Uuidm.create `V4 ]
+        [ Uuidm.v `V4 ]
         [ ""; "asd" ]
     ]
 ;;

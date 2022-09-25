@@ -48,7 +48,8 @@
    (>= 1.5.0))
   (sexplib0
    (>= v0.13.0))
-  uuidm))
+  uuidm
+  camlp-streams))
 
 (package
  (name pgx_unix)
@@ -138,12 +139,13 @@
    (and
     :with-test
     (>= 1.0.0)))
-  (core_kernel
+  (core
    (>= "v0.13.0"))
   (ocaml
    (>= 4.08))
   (pgx
-   (= :version))))
+   (= :version))
+   camlp-streams))
 
 (package
  (name pgx_value_ptime)

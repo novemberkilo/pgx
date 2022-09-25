@@ -11,9 +11,10 @@ bug-reports: "https://github.com/arenadotio/pgx/issues"
 depends: [
   "dune" {>= "1.11"}
   "alcotest" {with-test & >= "1.0.0"}
-  "core_kernel" {>= "v0.13.0"}
+  "core" {>= "v0.13.0"}
   "ocaml" {>= "4.08"}
   "pgx" {= version}
+  "camlp-streams"
 ]
 build: [
   ["dune" "subst"] {pinned}

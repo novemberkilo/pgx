@@ -394,7 +394,7 @@ struct
                   "CREATE TABLE multi_typed(uuid uuid, int int, string text, numeric \
                    numeric);"
                 >>= fun _ ->
-                let expect_uuid = Uuidm.create `V4 in
+                let expect_uuid = Uuidm.v `V4 in
                 let params =
                   let open Pgx.Value in
                   [ of_uuid expect_uuid

@@ -1,5 +1,5 @@
-(** Pgx_value types using Core_kernel's Date and Time modules *)
-open Core_kernel
+(** Pgx_value types using Core's Date and Time modules *)
+open Core
 
 type v = Pgx.Value.v [@@deriving compare, sexp_of]
 type t = Pgx.Value.t [@@deriving compare, sexp_of]

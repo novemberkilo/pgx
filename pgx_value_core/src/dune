@@ -10,6 +10,6 @@ let () = Jbuild_plugin.V1.send @@ {|
 
 (library
  (public_name pgx_value_core)
- (libraries core_kernel pgx)
+ (libraries core pgx camlp-streams)
  |} ^ preprocess ^ {|)
 |}
