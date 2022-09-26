@@ -44,7 +44,7 @@ let to_time' =
   let localtz_no_min = seq [ tz; eol ] |> compile in
   let localtz = seq [ tz; char ':'; digit; digit; eol ] |> compile in
   fun s ->
-    Time.of_string_with_utc_offset
+    Time.of_string
     @@
     match matches utctz s, matches localtz s, matches localtz_no_min s with
     | [], [], [] -> s ^ "Z"
